@@ -34,7 +34,7 @@ public class HomeController
         return "home";
     }
 
-    @PostMapping("/auth")
+    @RequestMapping("/auth")
     public ResponseEntity createAuthToken(@RequestBody AuthRequest authRequest)
     {
         try
